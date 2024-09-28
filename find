@@ -1,0 +1,13 @@
+find /path/to/directory -type f -name "*.txt" -size 5M
+(use -iname --> ignore cases) 
+-user -group
+-exec --> executes some command on found files
+-maxdepth
+-mtime +30 (files older than)
+
+
+ -exec rm {} /
+ -exec mv {} + 
+
+
+ find /home/ubuntu/myfolder -type *txt -size +5M -exec {} /
